@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <div class="page">
+        <h1>INCLUIR LIVRO</h1>
+        <form action="/include" method="post">
+            <p>Ano</p>
+            <select name="ano">
+                <option disabled selected value="" selected>Ano</option>
+                {% for ano in anos %}
+                    <option value="{{ ano }}">{{ ano }}</option>
+                {% endfor %}
+            </select>
+            <p>Título</p>
+            <input autofocus name="titulo" placeholder="Título" type="text">
+            <p>Autor</p>
+            <input autofocus name="autor" placeholder="Autor" type="text">
+            <p>Gênero</p>
+            <select name="genero">
+                <option disabled selected value="" selected>Gênero</option>
+                {% for genero in generos %}
+                    <option value="{{ genero }}">{{ genero }}</option>
+                {% endfor %}
+            </select>
+            <br></br>
+            <select name="status">
+                <option disabled selected value="" selected>Status</option>
+                {% for status in statuss %}
+                    <option value="{{ status }}">{{ status }}</option>
+                {% endfor %}
+            </select>
+            <br></br>
+            <select name="nota">
+                <option disabled selected value="" selected>Nota</option>
+                {% for nota in notas %}
+                    <option value="{{ nota }}">{{ nota }}</option>
+                {% endfor %}
+            </select>
+            <br></br>
+            <input class="big" type="submit" value="Incluir">
+        </form>
+    </div>
+
+{% endblock %}

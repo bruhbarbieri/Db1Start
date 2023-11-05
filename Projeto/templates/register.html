@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <h1>Histórico de Livros</h1>
+
+    <table>
+        <thead>
+            <th>Id</th>
+            <th>Ano</th>
+            <th>Título</th>
+            <th>Autor</th>
+            <th>Gênero</th>
+            <th>Status</th>
+            <th>Nota</th>
+        </thead>
+        <tbody>
+            {% for register in registers %}
+                <tr>
+                    <td id="id">{{ register.id }}</td>
+                    <td>{{ register.ano }}</td>
+                    <td>{{ register.titulo }}</td>
+                    <td>{{ register.autor }}</td>
+                    <td>{{ register.genero }}</td>
+                    <td class="{{ register.status }}">{{ register.status }}</td>
+                    <td>{{ register.nota }}</td>
+                    <td>
+                        <form action="/deletarlivro" method="get">
+                            <button type="submit" name="deletar" class="little" value="{{ register.id }}">Deletar</button>
+                        </form>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}

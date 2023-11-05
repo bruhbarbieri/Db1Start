@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+    <head>
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <title>My Library</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <header>
+            <div class="flex-container">
+                <a href="/">My Library</a>
+            </div>
+            <img src="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg" alt="livros">
+        </header>
+        {% block body %}{% endblock %}
+        <footer>
+            <div class="flex-container footer">
+                <p>&copy; 2023 Db1 Start</p>
+                <p>Desenvolvido por: Bruna Barbieri</p>
+            </div>
+        </footer>
+    </body>
+</html>

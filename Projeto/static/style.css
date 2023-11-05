@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.page {
+    padding: 20px;
+}
+
+p {
+    margin-bottom: 5px;
+}
+
+header {
+    background-color: purple;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    color: #FFF;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+form {
+    margin: 20px 0;
+    padding: 0px;
+}
+
+select {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea {
+    display: block;
+    width: 20%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.big {
+    background-color: blue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    padding: 10px 20px;
+    width: 150px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+a.input[type="submit"]:hover {
+    background-color: #cc5500;
+}
+
+.flex-container {
+    display: flex;
+    max-width: 992px;
+    margin: auto;
+    width: 100%;
+    min-width: 300px;
+}
+img {
+    display: flex;
+    width: 160px;
+    padding: 10px;
+}
+footer {
+    background-color: purple;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+footer .footer {
+    justify-content: space-between;
+    color: #FFF;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+.Lido {
+    background-color: green
+}
+
+.Lendo {
+    background-color: yellow
+}
+
+.Abandonado {
+    background-color: red
+}
+
+.little {
+    background-color: blue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 5px 10px;
+    width: 50px;
+    font-size: 10px;
+    cursor: pointer;
+}
